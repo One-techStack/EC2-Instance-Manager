@@ -48,6 +48,7 @@ if __name__ == "__main__":
     aws_config = load_config()
 
     if len(sys.argv) < 2:
+        print(f"Current region: {aws_config['region']}")
         print("Usage: script.py <command> [<instance_id>]")
         print("Commands: list, start, stop")
         sys.exit(1)
